@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box div{
+               width: 700px;
+               height: 150px;
+               background-color: yellow;
+               display: flex;
+               justify-content: space-evenly;
+               align-items: center;
+               border-bottom: 2px solid black;
+               border-radius: 15px;
+        }
+
+        img{
+            width: 100px;
+            height: 40%;
+        }
+
+        .box{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 40px;
+        }
+
+        h1{
+            margin-left: 20px;
+           
+        }
+       
+        b{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .card{
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+
+        header{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        main{
+            background-color: rgb(232, 232, 232);
+        }
+
+        input{
+            width: 200px;
+            height: 30px;
+            border-radius: 10px;
+            border: 2px solid blue;
+           
+        }
+
+        .inp3{
+            border: 2px solid red;
+        
+            
+        }
+
+        .btn1{
+            width: 100px;
+            height: 35px;
+            border-radius: 10px;
+            background-color: white;
+            color: blue;
+            border: 2px solid blue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .btn2{
+            width: 100px;
+            height: 35px;
+            border-radius: 10px;
+            background-color: white;
+            color: red;
+            border: 2px solid red;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .btn1:hover{
+             background-color: blue;
+             color: white;
+        }
+
+        .btn2:hover{
+             background-color: red;
+             color: white;
+        }
+
+        .v1{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .v2{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 5px;
+        }
+
+        @media(max-width:650px){
+            header{
+                width: 100%;
+                height: 300px;
+                flex-direction: column;
+            }
+
+            .v1{
+                flex-direction: column;
+            }
+
+            .v2{
+                flex-direction: column;
+            }
+
+            .box div{
+                width: 400px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+  <header>
+     <div class="v1">
+        <input type="text" class="inp1" placeholder="name">
+        <input type="text" class="inp2" placeholder="parol">
+        <input type="text" class="inp4" placeholder="imeges">
+        <button class="btn1">add</button>
+    
+     </div>
+    
+     <div class="v2">
+        <input type="text" class="inp3" placeholder="delete">
+        <button class="btn2">delete</button>
+     </div>
+  </header>
+
+ <main> <div class="box"> </div>
+ </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
